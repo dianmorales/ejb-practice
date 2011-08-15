@@ -1,12 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.ejb.client</groupId>
-	<artifactId>ejb-client</artifactId>
-	<packaging>war</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>ejb-client Maven Webapp</name>
-	<url>http://maven.apache.org</url>
+	<artifactId>ejb-controller</artifactId>
+	<packaging>jar</packaging>
+	<name>EJB Controller</name>
+	<version>1.0</version>
 	<properties>
 		<!-- Spring Version -->
 		<spring.version>3.0.5.RELEASE</spring.version>
@@ -37,11 +37,11 @@
 			<artifactId>spring-aop</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		  <dependency>
-                    <groupId>org.springframework</groupId>
-                    <artifactId>spring-jdbc</artifactId>
-                    <version>${spring.version}</version>
-                </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
@@ -127,45 +127,5 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-	<build>
-		<finalName>ejb-client</finalName>
-		<plugins>
-			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                    <encoding>ISO-8859-1</encoding>
-                    <showDeprecation>true</showDeprecation>
-                    <compilerArgument>-Xlint:unchecked</compilerArgument>
-                </configuration>
-            </plugin>
-			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>jetty-maven-plugin</artifactId>
-				<version>${jetty-plugin-version}</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.mortbay.jetty</groupId>
-						<artifactId>jetty-ssl</artifactId>
-						<version>7.0.0.pre5</version>
-					</dependency>
-				</dependencies>
-				<configuration>
 
-					<connectors>
-						<connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-							<port>8080</port>
-						</connector>
-
-					</connectors>
-					<webAppConfig>
-						<contextPath>/ejb</contextPath>
-					</webAppConfig>
-					<scanIntervalSeconds>5</scanIntervalSeconds>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
