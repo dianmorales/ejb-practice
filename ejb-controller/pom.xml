@@ -11,7 +11,7 @@
 		<!-- Spring Version -->
 		<spring.version>3.0.5.RELEASE</spring.version>
 		<spring.webflow.version>2.3.0.RELEASE</spring.webflow.version>
-		<spring.security.version>3.1.0.RC2</spring.security.version>
+		<spring.security.version>5.2.10.RELEASE</spring.security.version>
 		<spring-integration-core>2.0.0.RC2</spring-integration-core>
 		<!-- Hibernate Version -->
 		<hibernate.version>3.6.2.Final</hibernate.version>
