@@ -14,7 +14,7 @@
 		<spring.security.version>3.1.0.RC2</spring.security.version>
 		<spring-integration-core>2.0.0.RC2</spring-integration-core>
 		<!-- Hibernate Version -->
-		<hibernate.version>3.6.2.Final</hibernate.version>
+		<hibernate.version>5.3.20.Final</hibernate.version>
 		<hibernate.commons.annotations.version>3.2.0.Final
 		</hibernate.commons.annotations.version>
 		<jetty7.version>7.2.2.v20101205</jetty7.version>
